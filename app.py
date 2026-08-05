@@ -436,15 +436,15 @@ def render_dashboard():
                 map_pts.append({"lat": coords[0], "lon": coords[1], "nom": r["nom"],
                                  "localite": r["localite"], "sup": r["sup_ha"]})
         if map_pts:
-            fig_map = go.Figure(go.Scattermap(
+            fig_map = go.Figure(go.Scattermapbox(
                 lat=[p["lat"] for p in map_pts], lon=[p["lon"] for p in map_pts],
                 mode="markers", marker=dict(size=13, color="#1e7d32"),
                 text=[f"{p['nom']} — {p['localite']} ({p['sup']:.2f} ha)" for p in map_pts],
                 hoverinfo="text",
             ))
             fig_map.update_layout(
-                map=dict(style="open-street-map",
-                         center=dict(lat=map_pts[0]["lat"], lon=map_pts[0]["lon"]), zoom=6.2),
+                mapbox=dict(style="open-street-map",
+                            center=dict(lat=map_pts[0]["lat"], lon=map_pts[0]["lon"]), zoom=6.2),
                 height=260, margin=dict(l=0, r=0, t=10, b=0))
             st.plotly_chart(fig_map, use_container_width=True, config={"displayModeBar": False})
         else:
