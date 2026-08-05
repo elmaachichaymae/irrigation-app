@@ -176,7 +176,7 @@ def render_login():
                       type="primary" if st.session_state.auth_mode == "login" else "secondary"):
             st.session_state.auth_mode = "login"
     with col2:
-        if st.button("  Créer un compte", width='stretch',
+        if st.button("  Créer un compte", use_container_width=True,
                       type="primary" if st.session_state.auth_mode == "signup" else "secondary"):
             st.session_state.auth_mode = "signup"
 
@@ -186,7 +186,7 @@ def render_login():
             password = st.text_input("  Mot de passe", type="password")
             submitted = st.form_submit_button(
                 ("  Se connecter" if st.session_state.auth_mode == "login" else "  Créer le compte"),
-                width='stretch', type="primary")
+                use_container_width=True, type="primary")
 
     if submitted:
         if not username or not password:
