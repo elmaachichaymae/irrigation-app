@@ -172,7 +172,7 @@ def render_login():
 
     col1, col2 = st.columns(2)
     with col1:
-        if st.button("  Se connecter", width='stretch',
+        if st.button("  Se connecter", use_container_width=True,
                       type="primary" if st.session_state.auth_mode == "login" else "secondary"):
             st.session_state.auth_mode = "login"
     with col2:
