@@ -1,0 +1,23 @@
+[
+  {
+    "cin": "D345632",
+    "nom": "AHMED MIR",
+    "tel": "0756432312",
+    "localite": "OUJDA",
+    "updated_at": "2026-08-05T10:49:17"
+  },
+  {
+    "cin": "F453212",
+    "nom": "IMANE MARD",
+    "tel": "0856431378",
+    "localite": "BniDrar",
+    "updated_at": "2026-08-05T10:10:50"
+  },
+  {
+    "cin": "TALBI",
+    "nom": "MOHAMMED AMIN",
+    "tel": "0612345421",
+    "localite": "OUJDA",
+    "updated_at": "2026-08-05T12:02:14"
+  }
+]

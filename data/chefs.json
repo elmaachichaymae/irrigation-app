@@ -1,0 +1,7 @@
+{
+  "admin": {
+    "username": "admin",
+    "salt": "847522f6dad988191be8e6a0b257230c",
+    "pwhash": "67f8451393d7758c3019208ed747a29e2e6f2cdadeb96402a5c7cd09c8ea0ebc"
+  }
+}

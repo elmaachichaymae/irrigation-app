@@ -1,0 +1,305 @@
+{
+  "cultures": [
+    {
+      "name": "Oignon",
+      "EL": 0.3,
+      "EA": 0.1,
+      "kc": 0.9,
+      "kr": 0.8,
+      "eto": 5.0,
+      "ea": 0.9,
+      "debitG": 1.6,
+      "eDist": 1.0,
+      "nbRampes": 1.0,
+      "modele_goutteur": "",
+      "observation": "Plantation projetée"
+    },
+    {
+      "name": "Culture 2",
+      "EL": 0.0,
+      "EA": 0.0,
+      "kc": 0.0,
+      "kr": 0.0,
+      "eto": 0.0,
+      "ea": 1.0,
+      "debitG": 0.0,
+      "eDist": 0.0,
+      "nbRampes": 0.0,
+      "modele_goutteur": "",
+      "observation": ""
+    },
+    {
+      "name": "Culture 3",
+      "EL": 0.0,
+      "EA": 0.0,
+      "kc": 0.0,
+      "kr": 0.0,
+      "eto": 0.0,
+      "ea": 1.0,
+      "debitG": 0.0,
+      "eDist": 0.0,
+      "nbRampes": 0.0,
+      "modele_goutteur": "",
+      "observation": ""
+    },
+    {
+      "name": "Culture 4",
+      "EL": 0.0,
+      "EA": 0.0,
+      "kc": 0.0,
+      "kr": 0.0,
+      "eto": 0.0,
+      "ea": 1.0,
+      "debitG": 0.0,
+      "eDist": 0.0,
+      "nbRampes": 0.0,
+      "modele_goutteur": "",
+      "observation": ""
+    }
+  ],
+  "postes": [
+    {
+      "unites": [
+        {
+          "culture": 1,
+          "sup": 3425.0
+        }
+      ]
+    },
+    {
+      "unites": [
+        {
+          "culture": 1,
+          "sup": 6524.0
+        }
+      ]
+    },
+    {
+      "unites": [
+        {
+          "culture": 1,
+          "sup": 1300.0
+        }
+      ]
+    }
+  ],
+  "principale": [],
+  "asecondaires": {
+    "1": {
+      "ls": 70.0,
+      "dz": 0.0,
+      "mode": "normal"
+    },
+    "2": {
+      "ls": 70.0,
+      "dz": 0.0,
+      "mode": "normal"
+    },
+    "3": {
+      "ls": 70.0,
+      "dz": 0.0,
+      "mode": "normal"
+    }
+  },
+  "forages": [
+    {
+      "debit": 14.0,
+      "prof": 84.0,
+      "ns": 30.0,
+      "nd": 65.0,
+      "calage": 75.0,
+      "duree": 20.0,
+      "colonne": "TUBE UPVC DN 2\""
+    }
+  ],
+  "diam_ref": [
+    118.8,
+    104.2,
+    84.0,
+    70.0,
+    59.0,
+    46.4
+  ],
+  "varr": {
+    "unite": 11,
+    "lr": 55.0,
+    "phi": 17.0,
+    "hentree": 10.0,
+    "dz": 0.5,
+    "doubleface": false
+  },
+  "varpr": {
+    "unite": 11,
+    "lpr": 114.0,
+    "hentree": 17.2,
+    "dz": 9.0,
+    "doubleface": false,
+    "alloc": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "tableaux": {
+    "pn": 10.0,
+    "tol": 20.0
+  },
+  "profile": {
+    "nom": "MOHAMMED AMIN",
+    "cin": "TALBI",
+    "tel": "0612345421",
+    "localite": "OUJDA",
+    "parcelle": "",
+    "raison_sociale": "PROPRIETAIRE",
+    "ref_fonciere": "",
+    "adresse": "",
+    "superficie_totale": 0.0,
+    "texture_sol": "",
+    "permeabilite": ""
+  },
+  "varr_units": {
+    "11": [
+      {
+        "lr": 50.0,
+        "phi": 17.0,
+        "hentree": 10.0,
+        "dz": 0.0,
+        "doubleface": false
+      },
+      {
+        "lr": 50.0,
+        "phi": 17.0,
+        "hentree": 10.0,
+        "dz": 0.0,
+        "doubleface": false
+      }
+    ],
+    "21": [
+      {
+        "lr": 50.0,
+        "phi": 17.0,
+        "hentree": 10.0,
+        "dz": 0.0,
+        "doubleface": false
+      },
+      {
+        "lr": 50.0,
+        "phi": 17.0,
+        "hentree": 10.0,
+        "dz": 0.0,
+        "doubleface": false
+      }
+    ],
+    "31": [
+      {
+        "lr": 50.0,
+        "phi": 17.0,
+        "hentree": 10.0,
+        "dz": 0.0,
+        "doubleface": false
+      },
+      {
+        "lr": 50.0,
+        "phi": 17.0,
+        "hentree": 10.0,
+        "dz": 0.0,
+        "doubleface": false
+      }
+    ]
+  },
+  "varpr_units": {
+    "11": [
+      {
+        "lpr": 100.0,
+        "hentree": 15.0,
+        "dz": 0.0,
+        "doubleface": false,
+        "alloc": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "lpr": 100.0,
+        "hentree": 15.0,
+        "dz": 0.0,
+        "doubleface": false,
+        "alloc": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "21": [
+      {
+        "lpr": 100.0,
+        "hentree": 15.0,
+        "dz": 0.0,
+        "doubleface": false,
+        "alloc": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "lpr": 100.0,
+        "hentree": 15.0,
+        "dz": 0.0,
+        "doubleface": false,
+        "alloc": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "31": [
+      {
+        "lpr": 100.0,
+        "hentree": 15.0,
+        "dz": 0.0,
+        "doubleface": false,
+        "alloc": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "lpr": 100.0,
+        "hentree": 15.0,
+        "dz": 0.0,
+        "doubleface": false,
+        "alloc": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,466 @@
+{
+  "cultures": [
+    {
+      "name": "OLIVIER",
+      "EL": 8.0,
+      "EA": 7.0,
+      "kc": 0.65,
+      "kr": 0.65,
+      "eto": 6.0,
+      "ea": 0.9,
+      "debitG": 14.81,
+      "eDist": 2.33,
+      "nbRampes": 2.0,
+      "modele_goutteur": "",
+      "observation": ""
+    },
+    {
+      "name": "Culture 2",
+      "EL": 0.0,
+      "EA": 0.0,
+      "kc": 0.0,
+      "kr": 0.0,
+      "eto": 0.0,
+      "ea": 1.0,
+      "debitG": 0.0,
+      "eDist": 0.0,
+      "nbRampes": 0.0,
+      "modele_goutteur": "",
+      "observation": ""
+    },
+    {
+      "name": "Culture 3",
+      "EL": 0.0,
+      "EA": 0.0,
+      "kc": 0.0,
+      "kr": 0.0,
+      "eto": 0.0,
+      "ea": 1.0,
+      "debitG": 0.0,
+      "eDist": 0.0,
+      "nbRampes": 0.0,
+      "modele_goutteur": "",
+      "observation": ""
+    },
+    {
+      "name": "Culture 4",
+      "EL": 0.0,
+      "EA": 0.0,
+      "kc": 0.0,
+      "kr": 0.0,
+      "eto": 0.0,
+      "ea": 1.0,
+      "debitG": 0.0,
+      "eDist": 0.0,
+      "nbRampes": 0.0,
+      "modele_goutteur": "",
+      "observation": ""
+    }
+  ],
+  "postes": [
+    {
+      "unites": [
+        {
+          "culture": 1,
+          "sup": 5340.0
+        },
+        {
+          "culture": 1,
+          "sup": 10500.0
+        }
+      ]
+    },
+    {
+      "unites": [
+        {
+          "culture": 1,
+          "sup": 8700.0
+        },
+        {
+          "culture": 1,
+          "sup": 7850.0
+        }
+      ]
+    },
+    {
+      "unites": [
+        {
+          "culture": 1,
+          "sup": 8250.0
+        },
+        {
+          "culture": 1,
+          "sup": 8250.0
+        }
+      ]
+    }
+  ],
+  "principale": [
+    {
+      "name": "ST – V1",
+      "q": 26.3,
+      "mode": "normal"
+    },
+    {
+      "name": "V1 – V2V3",
+      "q": 26.3,
+      "mode": "normal"
+    }
+  ],
+  "asecondaires": {
+    "1": {
+      "ls": 70.0,
+      "dz": -9.0,
+      "mode": "normal"
+    },
+    "2": {
+      "ls": 75.0,
+      "dz": -3.5,
+      "mode": "normal"
+    },
+    "3": {
+      "ls": 170.0,
+      "dz": -5.0,
+      "mode": "normal"
+    }
+  },
+  "forages": [
+    {
+      "debit": 14.0,
+      "prof": 84.0,
+      "ns": 30.0,
+      "nd": 65.0,
+      "calage": 75.0,
+      "duree": 20.0,
+      "colonne": "TUBE UPVC DN 2\""
+    }
+  ],
+  "diam_ref": [
+    118.8,
+    104.2,
+    84.0,
+    70.0,
+    59.0,
+    46.4
+  ],
+  "varr": {
+    "unite": 32,
+    "lr": 55.0,
+    "phi": 17.0,
+    "hentree": 10.0,
+    "dz": 0.5,
+    "doubleface": false
+  },
+  "varpr": {
+    "unite": 12,
+    "lpr": 114.0,
+    "hentree": 17.2,
+    "dz": 9.0,
+    "doubleface": false,
+    "alloc": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "tableaux": {
+    "pn": 10.0,
+    "tol": 20.0
+  },
+  "profile": {
+    "nom": "AHMED MIR",
+    "cin": "D345632",
+    "tel": "0756432312",
+    "localite": "OUJDA",
+    "parcelle": "P-2026-015",
+    "raison_sociale": "PROPRIETAIRE",
+    "ref_fonciere": "TF 12567/45",
+    "adresse": "Province d'Oujda-Angad, Commune Bni Drar, Douar Sidi Yahya",
+    "superficie_totale": 0.0,
+    "texture_sol": "Limono-argileuse",
+    "permeabilite": "7 mm/h"
+  },
+  "varr_units": {
+    "11": [
+      {
+        "lr": 55.0,
+        "phi": 17.0,
+        "hentree": 10.0,
+        "dz": 0.5,
+        "doubleface": false
+      },
+      {
+        "lr": 55.0,
+        "phi": 17.0,
+        "hentree": 10.0,
+        "dz": 0.5,
+        "doubleface": false
+      }
+    ],
+    "21": [
+      {
+        "lr": 53.0,
+        "phi": 17.0,
+        "hentree": 10.0,
+        "dz": 0.5,
+        "doubleface": false
+      },
+      {
+        "lr": 53.0,
+        "phi": 17.0,
+        "hentree": 10.0,
+        "dz": 0.5,
+        "doubleface": false
+      }
+    ],
+    "31": [
+      {
+        "lr": 67.0,
+        "phi": 17.0,
+        "hentree": 10.0,
+        "dz": 0.5,
+        "doubleface": false
+      },
+      {
+        "lr": 67.0,
+        "phi": 17.0,
+        "hentree": 10.0,
+        "dz": 0.5,
+        "doubleface": false
+      }
+    ],
+    "12": [
+      {
+        "lr": 55.0,
+        "phi": 17.0,
+        "hentree": 10.0,
+        "dz": 0.5,
+        "doubleface": false
+      },
+      {
+        "lr": 55.0,
+        "phi": 17.0,
+        "hentree": 10.0,
+        "dz": 0.5,
+        "doubleface": false
+      }
+    ],
+    "22": [
+      {
+        "lr": 53.0,
+        "phi": 17.0,
+        "hentree": 10.0,
+        "dz": 0.5,
+        "doubleface": false
+      },
+      {
+        "lr": 53.0,
+        "phi": 17.0,
+        "hentree": 10.0,
+        "dz": 0.5,
+        "doubleface": false
+      }
+    ],
+    "32": [
+      {
+        "lr": 64.0,
+        "phi": 17.0,
+        "hentree": 10.0,
+        "dz": 0.5,
+        "doubleface": false
+      },
+      {
+        "lr": 67.0,
+        "phi": 17.0,
+        "hentree": 10.0,
+        "dz": 0.5,
+        "doubleface": false
+      }
+    ]
+  },
+  "varpr_units": {
+    "11": [
+      {
+        "lpr": 114.0,
+        "hentree": 10.0,
+        "dz": 9.0,
+        "doubleface": false,
+        "alloc": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          114.0
+        ]
+      },
+      {
+        "lpr": 114.0,
+        "hentree": 10.0,
+        "dz": 9.0,
+        "doubleface": true,
+        "alloc": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "21": [
+      {
+        "lpr": 132.0,
+        "hentree": 10.0,
+        "dz": 9.0,
+        "doubleface": false,
+        "alloc": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          42.0,
+          90.0
+        ]
+      },
+      {
+        "lpr": 132.0,
+        "hentree": 10.0,
+        "dz": 9.0,
+        "doubleface": false,
+        "alloc": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "31": [
+      {
+        "lpr": 108.0,
+        "hentree": 10.0,
+        "dz": 9.0,
+        "doubleface": false,
+        "alloc": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          108.0,
+          0.0
+        ]
+      },
+      {
+        "lpr": 108.0,
+        "hentree": 10.0,
+        "dz": 9.0,
+        "doubleface": false,
+        "alloc": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "12": [
+      {
+        "lpr": 144.0,
+        "hentree": 10.0,
+        "dz": 9.0,
+        "doubleface": false,
+        "alloc": [
+          0.0,
+          0.0,
+          0.0,
+          18.0,
+          48.0,
+          78.0
+        ]
+      },
+      {
+        "lpr": 144.0,
+        "hentree": 10.0,
+        "dz": 9.0,
+        "doubleface": false,
+        "alloc": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "22": [
+      {
+        "lpr": 114.0,
+        "hentree": 10.0,
+        "dz": 9.0,
+        "doubleface": false,
+        "alloc": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          42.0,
+          72.0
+        ]
+      },
+      {
+        "lpr": 114.0,
+        "hentree": 10.0,
+        "dz": 9.0,
+        "doubleface": false,
+        "alloc": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "32": [
+      {
+        "lpr": 110.0,
+        "hentree": 10.0,
+        "dz": 9.0,
+        "doubleface": false,
+        "alloc": [
+          0.0,
+          0.0,
+          0.0,
+          18.0,
+          42.0,
+          50.0
+        ]
+      },
+      {
+        "lpr": 110.0,
+        "hentree": 10.0,
+        "dz": 9.0,
+        "doubleface": true,
+        "alloc": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ]
+  }
+}
