@@ -296,6 +296,8 @@ def compute_var_r(state):
     )
 
 
+
+
 # --- Paramètres de rampe par unité (pour le module TABLEAUX complet) -------
 # Chaque unité a 2 "scénarios" (aller/retour, ou k/x dans le classeur d'origine) :
 # la feuille TABLEAUX du classeur affiche pour chaque unité une ligne par scénario
