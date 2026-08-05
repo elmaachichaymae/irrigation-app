@@ -172,22 +172,21 @@ def render_login():
 
     col1, col2 = st.columns(2)
     with col1:
-        if st.button("👤  Se connecter", use_container_width=True,
+        if st.button("  Se connecter", use_container_width=True,
                       type="primary" if st.session_state.auth_mode == "login" else "secondary"):
             st.session_state.auth_mode = "login"
     with col2:
-        if st.button("➕  Créer un compte", use_container_width=True,
+        if st.button(" Créer un compte", use_container_width=True,
                       type="primary" if st.session_state.auth_mode == "signup" else "secondary"):
             st.session_state.auth_mode = "signup"
 
     with st.container(key="login_card"):
         with st.form("auth_form"):
-            username = st.text_input("👤  Nom d'utilisateur")
-            password = st.text_input("🔒  Mot de passe", type="password")
+            username = st.text_input("  Nom d'utilisateur")
+            password = st.text_input("  Mot de passe", type="password")
             submitted = st.form_submit_button(
-                ("🔑  Se connecter" if st.session_state.auth_mode == "login" else "➕  Créer le compte"),
-                use_container_width=True, type="primary")
-
+                ("  Se connecter" if st.session_state.auth_mode == "login" else "➕  Créer le compte"),
+                use_container_width=True, type="secondary")
     if submitted:
         if not username or not password:
             st.error("Merci de renseigner un nom et un mot de passe.")
@@ -289,12 +288,12 @@ def render_sidebar():
             "<div><div style='font-weight:800;color:#123d1c;line-height:1.1;'>IRRIGATION</div>"
             "<div style='font-size:0.72rem;color:#1e7d32;letter-spacing:.05em;'>LOCALISÉE</div></div>"
             "</div>", unsafe_allow_html=True)
-        st.markdown("###### 📊 Tableau de bord")
-        if st.button("➕  Nouveau dossier", use_container_width=True):
+        st.markdown("######  Tableau de bord")
+        if st.button("  Nouveau dossier", use_container_width=True):
             st.session_state.show_new_agriculteur_form = True
         st.markdown("---")
         st.caption(f"Connecté : **{st.session_state.chef}**")
-        if st.button("🚪  Déconnexion", use_container_width=True):
+        if st.button("  Déconnexion", use_container_width=True):
             st.session_state.chef = None
             st.session_state.agriculteur = None
             st.session_state.proj = None
@@ -332,7 +331,7 @@ def render_dashboard():
 
     topL, topR = st.columns([3, 1.4])
     with topL:
-        st.text_input("🔎  Rechercher un dossier (nom ou CIN)…", key="dash_search",
+        st.text_input("  Rechercher un dossier (nom ou CIN)…", key="dash_search",
                       label_visibility="collapsed", placeholder="🔎  Rechercher un dossier (nom ou CIN)…")
     with topR:
         st.markdown(
