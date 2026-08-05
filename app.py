@@ -172,20 +172,20 @@ def render_login():
 
     col1, col2 = st.columns(2)
     with col1:
-        if st.button(" Se connecter", use_container_width=True,
+        if st.button("👤  Se connecter", use_container_width=True,
                       type="primary" if st.session_state.auth_mode == "login" else "secondary"):
             st.session_state.auth_mode = "login"
     with col2:
-        if st.button(" Créer un compte", use_container_width=True,
+        if st.button("➕  Créer un compte", use_container_width=True,
                       type="primary" if st.session_state.auth_mode == "signup" else "secondary"):
             st.session_state.auth_mode = "signup"
 
-    with st.container():
+    with st.container(key="login_card"):
         with st.form("auth_form"):
-            username = st.text_input("  Nom d'utilisateur")
-            password = st.text_input("  Mot de passe", type="password")
+            username = st.text_input("👤  Nom d'utilisateur")
+            password = st.text_input("🔒  Mot de passe", type="password")
             submitted = st.form_submit_button(
-                ("  Se connecter" if st.session_state.auth_mode == "login" else "  Créer le compte"),
+                ("🔑  Se connecter" if st.session_state.auth_mode == "login" else "➕  Créer le compte"),
                 use_container_width=True, type="primary")
 
     if submitted:
@@ -285,16 +285,16 @@ def render_sidebar():
     with st.sidebar:
         st.markdown(
             "<div style='display:flex;align-items:center;gap:8px;margin-bottom:1.2rem;'>"
-            "<span style='font-size:1.6rem;'></span>"
+            "<span style='font-size:1.6rem;'>🌾</span>"
             "<div><div style='font-weight:800;color:#123d1c;line-height:1.1;'>IRRIGATION</div>"
             "<div style='font-size:0.72rem;color:#1e7d32;letter-spacing:.05em;'>LOCALISÉE</div></div>"
             "</div>", unsafe_allow_html=True)
-        st.markdown("######  Tableau de bord")
-        if st.button("  Nouveau dossier", width='stretch'):
+        st.markdown("###### 📊 Tableau de bord")
+        if st.button("➕  Nouveau dossier", use_container_width=True):
             st.session_state.show_new_agriculteur_form = True
         st.markdown("---")
         st.caption(f"Connecté : **{st.session_state.chef}**")
-        if st.button("  Déconnexion", width='stretch'):
+        if st.button("🚪  Déconnexion", use_container_width=True):
             st.session_state.chef = None
             st.session_state.agriculteur = None
             st.session_state.proj = None
@@ -332,8 +332,8 @@ def render_dashboard():
 
     topL, topR = st.columns([3, 1.4])
     with topL:
-        st.text_input("  Rechercher un dossier (nom ou CIN)…", key="dash_search",
-                      label_visibility="collapsed", placeholder="  Rechercher un dossier (nom ou CIN)…")
+        st.text_input("🔎  Rechercher un dossier (nom ou CIN)…", key="dash_search",
+                      label_visibility="collapsed", placeholder="🔎  Rechercher un dossier (nom ou CIN)…")
     with topR:
         st.markdown(
             f"<div style='display:flex;align-items:center;justify-content:flex-end;gap:10px;height:38px;'>"
@@ -350,8 +350,8 @@ def render_dashboard():
             tel = fc1.text_input("Téléphone")
             localite = fc2.text_input("Localité / Douar")
             b1, b2 = st.columns(2)
-            create = b1.form_submit_button("Créer le dossier", type="primary", width='stretch')
-            cancel = b2.form_submit_button("Annuler", width='stretch')
+            create = b1.form_submit_button("Créer le dossier", type="primary", use_container_width=True)
+            cancel = b2.form_submit_button("Annuler", use_container_width=True)
         if cancel:
             st.session_state.show_new_agriculteur_form = False
             st.rerun()
@@ -420,7 +420,7 @@ def render_dashboard():
             fig.update_layout(showlegend=True, height=260,
                                margin=dict(l=0, r=0, t=10, b=0),
                                legend=dict(orientation="v", x=1, y=0.5))
-            st.plotly_chart(fig, width='stretch', config={"displayModeBar": False})
+            st.plotly_chart(fig, use_container_width=True, config={"displayModeBar": False})
         else:
             st.caption("Aucune culture renseignée pour le moment dans les dossiers existants.")
         st.markdown("</div>", unsafe_allow_html=True)
@@ -446,7 +446,7 @@ def render_dashboard():
                 map=dict(style="open-street-map",
                          center=dict(lat=map_pts[0]["lat"], lon=map_pts[0]["lon"]), zoom=6.2),
                 height=260, margin=dict(l=0, r=0, t=10, b=0))
-            st.plotly_chart(fig_map, width='stretch', config={"displayModeBar": False})
+            st.plotly_chart(fig_map, use_container_width=True, config={"displayModeBar": False})
         else:
             st.caption("Aucune localité reconnue pour le moment — renseigne la localité de "
                        "chaque dossier (ville/commune de la région).")
@@ -465,7 +465,7 @@ def render_dashboard():
             fig2 = go.Figure(data=[go.Bar(x=locs, y=counts, marker_color="#1e7d32")])
             fig2.update_layout(height=230, margin=dict(l=0, r=0, t=10, b=0),
                                 yaxis=dict(title="Dossiers", tick0=0, dtick=1))
-            st.plotly_chart(fig2, width='stretch', config={"displayModeBar": False})
+            st.plotly_chart(fig2, use_container_width=True, config={"displayModeBar": False})
         else:
             st.caption("Pas encore de localité renseignée.")
         st.markdown("</div>", unsafe_allow_html=True)
@@ -485,7 +485,7 @@ def render_dashboard():
                                                marker=dict(size=7))])
             fig3.update_layout(height=230, margin=dict(l=0, r=0, t=10, b=0),
                                 yaxis=dict(title="Dossiers cumulés", tick0=0, dtick=1))
-            st.plotly_chart(fig3, width='stretch', config={"displayModeBar": False})
+            st.plotly_chart(fig3, use_container_width=True, config={"displayModeBar": False})
         else:
             st.caption("Pas encore d'historique disponible.")
         st.markdown("</div>", unsafe_allow_html=True)
@@ -509,7 +509,7 @@ def render_dashboard():
                 "Débit (m³/h)": round(r.get("debit", 0), 2),
                 "Dernière maj": (r.get("updated_at") or "")[:16].replace("T", " "),
             })
-        st.dataframe(table_data, width='stretch', hide_index=True)
+        st.dataframe(table_data, use_container_width=True, hide_index=True)
 
         st.markdown("###### Ouvrir ou supprimer un dossier")
         options = {f"{f.get('nom') or '(sans nom)'} — CIN {f['cin']}": f for f in shown}
@@ -521,19 +521,19 @@ def render_dashboard():
             st.warning(f"Supprimer définitivement le dossier de **{selected.get('nom') or selected['cin']}** ? "
                        "Cette action est irréversible.")
             cc1, cc2 = st.columns(2)
-            if cc1.button("Oui, supprimer", key=f"confirmdel_{selected['cin']}", type="primary", width='stretch'):
+            if cc1.button("Oui, supprimer", key=f"confirmdel_{selected['cin']}", type="primary", use_container_width=True):
                 storage.delete_agriculteur(selected["cin"])
                 st.session_state.pop(confirm_key, None)
                 st.rerun()
-            if cc2.button("Annuler", key=f"canceldel_{selected['cin']}", width='stretch'):
+            if cc2.button("Annuler", key=f"canceldel_{selected['cin']}", use_container_width=True):
                 st.session_state.pop(confirm_key, None)
                 st.rerun()
         else:
             b1, b2 = st.columns(2)
-            if b1.button("Ouvrir →", key=f"open_{selected['cin']}", type="primary", width='stretch'):
+            if b1.button("Ouvrir →", key=f"open_{selected['cin']}", type="primary", use_container_width=True):
                 open_agriculteur(selected)
                 st.rerun()
-            if b2.button("🗑 Supprimer", key=f"askdel_{selected['cin']}", width='stretch'):
+            if b2.button("🗑 Supprimer", key=f"askdel_{selected['cin']}", use_container_width=True):
                 st.session_state[confirm_key] = True
                 st.rerun()
     st.markdown("</div>", unsafe_allow_html=True)
@@ -568,14 +568,14 @@ def render_topbar():
         label = profile.get("nom") or st.session_state.agriculteur["cin"]
         st.markdown(f"Dossier : **{label}** · CIN {st.session_state.agriculteur['cin']}")
     with cols[2]:
-        if st.button("Enregistrer", width='stretch'):
+        if st.button("Enregistrer", use_container_width=True):
             save_current_project()
             st.toast("✓ Projet enregistré")
     with cols[3]:
         pdf_bytes = generate_pdf(st.session_state.proj)
         st.download_button("⬇ Télécharger le PDF", data=pdf_bytes,
                             file_name=f"Fiche_irrigation_{(profile.get('nom') or st.session_state.agriculteur['cin']).replace(' ', '_')}.pdf",
-                            mime="application/pdf", width='stretch')
+                            mime="application/pdf", use_container_width=True)
     st.divider()
 
 
@@ -849,7 +849,7 @@ def tab_variation_r(proj):
              "P (mCE)": f"{row['P']:.3f}", "V (m/s)": f"{row['V']:.3f}",
              "Vitesse": "Correct" if row["V"] <= r["vmax"] else "Excessive"}
             for row in r["rows"]
-        ], width='stretch', hide_index=True)
+        ], use_container_width=True, hide_index=True)
 
 
 def tab_variation_pr(proj):
@@ -912,7 +912,7 @@ def tab_variation_pr(proj):
              "Δz (m)": f"{row['dz']:.4f}" if row["i"] else "-", "H (mCE)": f"{row['H']:.3f}",
              "V (m/s)": f"{row['V']:.3f}", "Vitesse": "Correct" if row["V"] <= pr["vmax"] else "Excessive"}
             for row in pr["rows"]
-        ], width='stretch', hide_index=True)
+        ], use_container_width=True, hide_index=True)
 
 
 def tab_tableaux(proj):
@@ -973,7 +973,7 @@ def tab_tableaux(proj):
             "Unité": r["code"], "ΔP rampe (m)": f"{r['r_dp']:.3f}", "ΔP porte-rampe (m)": f"{r['pr_dp']:.3f}",
             "ΔP enveloppe (m)": f"{dp_env:.3f}", "Vérification": "Dans la tolérance" if ok else "Hors tolérance",
         })
-    st.dataframe(verif_rows, width='stretch', hide_index=True)
+    st.dataframe(verif_rows, use_container_width=True, hide_index=True)
 
 
 def tab_principale(proj):
