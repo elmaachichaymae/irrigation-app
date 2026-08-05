@@ -180,7 +180,7 @@ def render_login():
                       type="primary" if st.session_state.auth_mode == "signup" else "secondary"):
             st.session_state.auth_mode = "signup"
 
-    with st.container(key="login_card"):
+    with st.container():
         with st.form("auth_form"):
             username = st.text_input("  Nom d'utilisateur")
             password = st.text_input("  Mot de passe", type="password")
